@@ -19,7 +19,7 @@ If you have issues with opening the camera:
 
 In our configuration, the Lidar is connected by a Ethernet Port. The Lidar needed to be on the same network as the listener.
 
-The Lidar is configured on the 192.168.1.155. In case, you need to change the ipaddress, you need to change: 
+The Lidar is configured on the 192.168.0.155. In case, you need to change the ipaddress, you need to change: 
 
 - The lidar internal ipaddress with [Sick Software](https://www.sick.com/us/en/downloads/software?q=%3Atyp1%3AConfiguration%2520software%3Atyp2%3ASOPAS%2520ET%3ADef_Type%3ADownload) 
 - The hostname inside the sick_tim launch file
