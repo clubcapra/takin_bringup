@@ -1,4 +1,5 @@
 <launch>
+    <include file="$(find takin_estop)/launch/estop.launch"/>
     <include file="$(find takin_bringup)/launch/takin_teleop.launch"/>
     <include file="$(find takin_bringup)/launch/takin_detection.launch"/>
     <include file="$(find takin_bringup)/launch/takin_slam.launch"/>
