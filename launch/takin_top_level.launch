@@ -7,5 +7,6 @@
     <include file="$(find vectornav)/launch/vectornav.launch" />
     <include file="$(find takin_bringup)/launch/sick_tim.launch"/>
     <include file="$(find takin_bringup)/launch/takin_speaker.launch"/>
-    <include file="$(find takin_bringup)/launch/takin_web_ui.launch"/>    
+    <include file="$(find takin_bringup)/launch/takin_web_ui.launch"/>
+    <include file="$(find capra_headlights_ros)/launch/headlights.launch"/>
 </launch>
