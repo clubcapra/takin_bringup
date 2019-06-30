@@ -19,16 +19,18 @@
 
   <include file="$(find vectornav)/launch/vectornav.launch" />
   <include file="$(find takin_bringup)/launch/sick_tim.launch"/>
+  <include file="$(find takin_bringup)/launch/hector_slam.launch"/>
 
-  <node name="cartographer_node" pkg="cartographer_ros"
-      type="cartographer_node" args="
-          -configuration_directory $(find takin_bringup)/config
-          -configuration_basename takin_slam.lua"
-      output="screen">
-    <remap from="points2" to="/camera_3d/depth/points" />
-  </node>
 
-  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
-      type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
+  <!--<node name="cartographer_node" pkg="cartographer_ros"-->
+      <!--type="cartographer_node" args="-->
+          <!-- -configuration_directory $(find takin_bringup)/config-->
+          <!-- -configuration_basename takin_slam.lua"-->
+      <!--output="screen">-->
+    <!--<remap from="points2" to="/camera_3d/depth/points" />-->
+  <!--</node>-->
+
+  <!--<node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"-->
+      <!--type="cartographer_occupancy_grid_node" args="-resolution 0.05" />-->
 
 </launch>

@@ -2,10 +2,10 @@
     <include file="$(find takin_estop)/launch/estop.launch"/>
     <include file="$(find takin_bringup)/launch/takin_teleop.launch"/>
     <include file="$(find takin_bringup)/launch/takin_detection.launch"/>
-    <!--<include file="$(find takin_bringup)/launch/takin_slam.launch"/>-->
-    <include file="$(find takin_description)/launch/robot_description.launch"/>
-    <include file="$(find vectornav)/launch/vectornav.launch" />
-    <include file="$(find takin_bringup)/launch/sick_tim.launch"/>
+    <include file="$(find takin_bringup)/launch/takin_slam.launch"/>
+    <!--<include file="$(find takin_description)/launch/robot_description.launch"/>-->
+    <!--<include file="$(find vectornav)/launch/vectornav.launch" />-->
+    <!--<include file="$(find takin_bringup)/launch/sick_tim.launch"/>-->
     <include file="$(find takin_bringup)/launch/takin_speaker.launch"/>
     <include file="$(find takin_bringup)/launch/takin_web_ui.launch"/>
     <include file="$(find capra_headlights_ros)/launch/headlights.launch"/>
