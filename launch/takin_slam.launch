@@ -16,7 +16,6 @@
 <launch>
 
   <include file="$(find takin_description)/launch/robot_description.launch"/>
-
   <include file="$(find vectornav)/launch/vectornav.launch" />
   <include file="$(find takin_bringup)/launch/sick_tim.launch"/>
   <include file="$(find takin_bringup)/launch/hector_slam.launch"/>
