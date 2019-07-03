@@ -5,9 +5,8 @@
     <param name="dev" value="/dev/input/js0" />
     <remap from="diagnostics" to="dompe" />
     </node>
+    <node pkg="sara_teleop" type="sara_teleop" name="sara_teleop" output="screen">    </node>
     <include file="$(find capra_arm_description)/launch/test_launch.launch"/>
     <include file="$(find sara_control)/launch/sara_hardware.launch"/>
     <include file="$(find sara_launch)/launch/control/sara_controllers.launch"/>
-    <node pkg="sara_teleop" type="sara_teleop" name="sara_teleop" output="screen">
-    </node>
 </launch>
